@@ -1,0 +1,64 @@
+body{
+    background-image: url('fondo.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.titulo {
+    color: white;
+    
+}
+.titulo h1 {
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    font-size:50px;
+    
+}
+
+.contenedor-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura como necesites */
+}
+.line {
+    border: none;
+    border-top: 1px solid #fff; /* Cambia el color y el grosor de la línea según tus preferencias */
+    margin: 20px 0; /* Ajusta el margen para separar la línea de los contenedores */
+}
+.opciones {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+
+}
+
+.opcion {
+    background-color: #90ee90; /* Verde claro */
+    border: 2px solid #8fbc8f; /* Borde suave */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px;
+    margin: 40px;
+    width: 200px;
+    font-size: 20px;
+    text-decoration: none; /* Elimina el subrayado */
+    color: black;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px; /* Ajusta la altura según necesites */
+}
+
+.opcion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}

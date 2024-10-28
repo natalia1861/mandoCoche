@@ -1,0 +1,79 @@
+body{
+    background-image: url('sensores.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.control-container {
+    margin: 0 auto;
+    max-width: 2400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.separador{
+        margin-top: 20px; /* Opcional: añade margen superior para dar más espacio */
+}
+
+.control-container2 {
+    margin: 0 auto;
+    max-width: 2400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.state {
+    /* Agrega tus propiedades de estilo aquí */
+    background-color: #e0f0e0; /* Color de fondo de la celda */
+    color: #333;               /* Color del texto */
+    padding: 10px;             /* Espacio interior alrededor del contenido */
+    border: 1px solid #ddd;    /* Borde de la celda */
+    text-align: center;        /* Alineación del texto */
+    /* Puedes agregar más propiedades según tus necesidades */
+}
+
+.events {
+    /* Agrega tus propiedades de estilo aquí */
+    background-color: #e0f0e0; /* Color de fondo de la celda */
+    color: #333;               /* Color del texto */
+    padding: 10px;             /* Espacio interior alrededor del contenido */
+    border: 1px solid #ddd;    /* Borde de la celda */
+    text-align: center;        /* Alineación del texto */
+    /* Puedes agregar más propiedades según tus necesidades */
+}
+
+.disable {
+    /* Agrega tus propiedades de estilo aquí */
+    background-color: #e0f0e0; /* Color de fondo de la celda */
+    color: #333;               /* Color del texto */
+    padding: 10px;             /* Espacio interior alrededor del contenido */
+    border: 1px solid #ddd;    /* Borde de la celda */
+    text-align: center;        /* Alineación del texto */
+    /* Puedes agregar más propiedades según tus necesidades */
+}
+
+input[type=submit] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #60c060; /* Cambia el color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td .check {
+    display: block;
+    margin: auto;
+}

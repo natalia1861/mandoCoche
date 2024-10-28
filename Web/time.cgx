@@ -1,0 +1,7 @@
+t <form>
+t <text>
+t <id>time_value</id>
+c i<value>%s</value>
+t </text>
+t </form>
+.

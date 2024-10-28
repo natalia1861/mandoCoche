@@ -1,0 +1,12 @@
+FLAGS hacia principal
+
+RTC  0x01
+TEMP 0x02
+TECLADO 0x04
+GAS 0x08
+PROXIMIDAD 0x10
+RFID 0x20
+WEB 0x40
+FLASH 0x80
+
+las flags de cada hilo estan definidas en su .h
