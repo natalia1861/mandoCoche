@@ -57,10 +57,6 @@ static void I2C1_callback(uint32_t event){
 		osSemaphoreRelease(transfer_I2C_semaphore);  // Notificar transferencia completa
 }
 
-static void timeout_callback () {
-	
-}
-
 uint32_t IC1_ReadRegister (uint32_t SLAVE_ADDRESS, uint8_t reg, uint8_t* data) {
   // Adquirir el mutex antes de acceder al I2C
 	osMutexAcquire(I2C1_mutex, osWaitForever);

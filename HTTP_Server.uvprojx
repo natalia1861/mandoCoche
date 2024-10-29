@@ -569,16 +569,6 @@
               <FilePath>.\consumo.h</FilePath>
             </File>
             <File>
-              <FileName>AS5600.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\AS5600.c</FilePath>
-            </File>
-            <File>
-              <FileName>AS5600.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\AS5600.h</FilePath>
-            </File>
-            <File>
               <FileName>error.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\error.h</FilePath>
@@ -1456,16 +1446,6 @@
               <FileName>consumo.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\consumo.h</FilePath>
-            </File>
-            <File>
-              <FileName>AS5600.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\AS5600.c</FilePath>
-            </File>
-            <File>
-              <FileName>AS5600.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\AS5600.h</FilePath>
             </File>
             <File>
               <FileName>error.h</FileName>

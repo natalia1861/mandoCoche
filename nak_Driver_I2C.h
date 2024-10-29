@@ -27,15 +27,23 @@
 
 #define FLAG_TRANSFER_COMPLETE					0x01
 
+
 typedef enum {
 	I2C1_Line,
 	I2C2_Line,
 	I2C3_Line,
-	I2C4_Line,
-	I2C5_Line,
-	I2C6_Line,
 	I2C_MAX,
 } I2C_used_t;
+
+//struct for I2C Driver
+typedef struct {
+	char name[5];
+	ARM_DRIVER_I2C *driver;
+	osMutexId_t mutex_I2C;
+	osSemaphoreId_t transfer_I2C_semaphore;
+	ARM_I2C_SignalEvent_t callback_I2C;
+	bool initialized;
+} I2C_DriverConfig_t;
 
 //hacer algo parecido para gestion de errores
 
@@ -53,7 +61,10 @@ typedef struct {
 	uint32_t speed;
 } I2C_configuration_t;
 
-//int32_t I2C1_Init(void);
+int32_t I2C_Init(I2C_DriverConfig_t I2C_Driver);
+int32_t I2C1_Configure(I2C_DriverConfig_t I2C_Driver, I2C_configuration_t configuration);
+
+
 //int32_t I2C1_Configure(I2C_configuration_t configuration);
 
 
