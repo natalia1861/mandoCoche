@@ -19,6 +19,7 @@
 ".\debug\servomotor.o"
 ".\debug\consumo.o"
 ".\debug\nak_driver_i2c.o"
+".\debug\i2c_prueba_temp.o"
 ".\debug\spi_driver.o"
 ".\debug\led_nucleo_f429zi.o"
 ".\debug\irq_armv7m.o"

@@ -19,21 +19,20 @@
 
 #define BUS_I2C_100K_SPEED							ARM_I2C_BUS_SPEED_STANDARD
 #define BUS_I2C_400K_SPEED							ARM_I2C_BUS_SPEED_FAST
-#define BUS_I2C_1M_SPEED								ARM_I2C_BUS_SPEED_FAST_PLUS
+#define BUS_I2C_1M_SPEED							ARM_I2C_BUS_SPEED_FAST_PLUS
 #define BUS_I2C_3_4_M_SPEED							ARM_I2C_BUS_SPEED_HIGH 
 
 //#define AS5600_I2C_ADDRESS					0x36
 //#define AS5600_ANGLE_REG    				0x0E
 
-#define FLAG_TRANSFER_COMPLETE					0x01
-
+#define FLAG_TRANSFER_COMPLETE					    0x01
 
 typedef enum {
-	I2C1_Line,
-	I2C2_Line,
-	I2C3_Line,
-	I2C_MAX,
-} I2C_used_t;
+    I2C_LINE_1,
+    I2C_LINE_2,
+    I2C_LINE_3,
+    I2C_LINE_MAX
+} I2C_LINE;
 
 //struct for I2C Driver
 typedef struct {
@@ -58,14 +57,14 @@ typedef struct {
 //} status_error_codes_t;
  
 typedef struct {
-	uint32_t speed;
+    uint32_t speed;
 } I2C_configuration_t;
 
-int32_t I2C_Init(I2C_DriverConfig_t I2C_Driver);
-int32_t I2C1_Configure(I2C_DriverConfig_t I2C_Driver, I2C_configuration_t configuration);
-
-
-//int32_t I2C1_Configure(I2C_configuration_t configuration);
-
+int32_t I2C_Init_All (void);
+int32_t I2C_Init(I2C_LINE I2C_line);
+int32_t I2C_Configure(I2C_LINE I2C_line, I2C_configuration_t configuration);
+int32_t I2C_ReadRegister (I2C_LINE I2C_line, uint32_t SLAVE_ADDRESS, uint8_t reg, uint8_t* data);
+int32_t I2C_ReadRegisters (I2C_LINE I2C_line, uint32_t SLAVE_ADDRESS, uint8_t reg, uint8_t* data, uint8_t size);
+int32_t I2C_WriteRegister (I2C_LINE I2C_line, uint32_t SLAVE_ADDRESS, uint8_t reg, uint8_t data);
 
 #endif

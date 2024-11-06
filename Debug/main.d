@@ -42,3 +42,8 @@
 .\debug\main.o: principal.h
 .\debug\main.o: D:\Aplicaciones\keil uvision\core\ARM\ARMCC\Bin\..\include\string.h
 .\debug\main.o: D:\Aplicaciones\keil uvision\core\ARM\ARMCC\Bin\..\include\stdlib.h
+.\debug\main.o: I2C_prueba_temp.h
+.\debug\main.o: nak_Driver_I2C.h
+.\debug\main.o: D:\Aplicaciones\keil uvision\pack\ARM\CMSIS\5.8.0\CMSIS\Driver\Include\Driver_I2C.h
+.\debug\main.o: D:\Aplicaciones\keil uvision\pack\ARM\CMSIS\5.8.0\CMSIS\Driver\Include\Driver_Common.h
+.\debug\main.o: D:\Aplicaciones\keil uvision\core\ARM\ARMCC\Bin\..\include\stdbool.h
