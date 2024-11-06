@@ -568,8 +568,8 @@ uint32_t netCGI_Script (const char *env, char *buf, uint32_t buflen, uint32_t *p
 
     case 'y':
       // Button state from 'button.cgx'
-      len = (uint32_t)sprintf (buf, "<checkbox><id>button%c</id><on>%s</on></checkbox>",
-                               env[1], (get_button () & (1 << (env[1]-'0'))) ? "true" : "false");
+        len = (uint32_t)sprintf (buf, "<checkbox><id>button%c</id><on>%s</on></checkbox>",
+        env[1], (get_button () & (1 << (env[1]-'0'))) ? "true" : "false");
       break;
 
   }

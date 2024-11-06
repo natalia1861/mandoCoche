@@ -583,6 +583,16 @@
               <FileType>5</FileType>
               <FilePath>.\nak_Driver_I2C.h</FilePath>
             </File>
+            <File>
+              <FileName>I2C_prueba_temp.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\I2C_prueba_temp.h</FilePath>
+            </File>
+            <File>
+              <FileName>I2C_prueba_temp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\I2C_prueba_temp.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1461,6 +1471,16 @@
               <FileName>nak_Driver_I2C.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\nak_Driver_I2C.h</FilePath>
+            </File>
+            <File>
+              <FileName>I2C_prueba_temp.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\I2C_prueba_temp.h</FilePath>
+            </File>
+            <File>
+              <FileName>I2C_prueba_temp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\I2C_prueba_temp.c</FilePath>
             </File>
           </Files>
         </Group>

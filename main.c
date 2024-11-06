@@ -40,6 +40,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "principal.h"
+#include "I2C_prueba_temp.h"
 
 #ifdef RTE_CMSIS_RTOS2_RTX5
 /**
@@ -113,8 +114,8 @@ int main(void)
   osKernelInitialize ();
 
   /* Create application main thread */
-  osThreadNew(app_main, NULL, &app_main_attr);
-	
+  //osThreadNew(app_main, NULL, &app_main_attr);
+    Init_temp_sensor();
 
   /* Start thread execution */
   osKernelStart();
